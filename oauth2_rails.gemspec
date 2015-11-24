@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Oauth2 Rails based client for Fitbit specifically.}
   spec.homepage      = "https://github.com/ColDog/oauth2-fitbit-rails"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)}) || f == "oauth2_rails-0.1.0.gem" }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
